@@ -25,6 +25,7 @@ build/
 .next/
 .nuxt/
 .svelte-kit/
+.angular/
 .turbo/
 .cache/
 coverage/

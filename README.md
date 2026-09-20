@@ -35,6 +35,10 @@ Identity — session, cookie, or bearer. Who the caller is.
 | [`authn/astro`](authn/astro/) | Astro | SSR hosted sign-in |
 | [`authn/fastify`](authn/fastify/) | Fastify | Plugin session and `requireAuth` preHandler |
 | [`authn/node`](authn/node/) | Node.js | Bearer token validation with `@authdog/node-commons` |
+| [`authn/go`](authn/go/) | Go | Gin session attach and `RequireAuth` gate |
+| [`authn/java`](authn/java/) | Java | Bearer token validation (`authdog-java-sdk`, source-only) |
+| [`authn/csharp`](authn/csharp/) | C# | Bearer token validation (`Authdog.Sdk`, source-only) |
+| [`authn/python`](authn/python/) | Python | FastAPI `require_auth` gate (source-only extra) |
 
 ## Access Control
 
@@ -99,7 +103,7 @@ On a stack that can enforce access on the server:
 
 | Wave | Stacks | Status |
 | --- | --- | --- |
-| 3 | `go`, `java`, `csharp`, `python` | Planned — language backends (`python` extras are source-only) |
+| 3 | `go`, `java`, `csharp`, `python` | authn present; authz, observability, and lidar planned (`python` extras are source-only) |
 | 4 | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | Planned — mobile / native; no `authz/<stack>` (pair with a server sample). Native stacks use the REST / redirect bridge until an official SDK ships |
 | 5 | `gatsby`, `redwood`, `react`, `rust` | Planned — `react` is UI-only (`@authdog/react-elements`); `rust` is source-only until a crate is published |
 

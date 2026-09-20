@@ -17,13 +17,14 @@ Cursor skills live in `.cursor/skills/speckit-*`.
 | [007-wave-2-authz](./007-wave-2-authz/) | Implemented | Wave 2 authorization: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
 | [008-wave-2-observability](./008-wave-2-observability/) | Implemented | Wave 2 observability: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
 | [009-wave-2-lidar](./009-wave-2-lidar/) | Implemented | Wave 2 Lidar: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
+| [010-wave-3-authn](./010-wave-3-authn/) | Implemented | Wave 3 authentication: go, java, csharp, python |
 
 Start here: [001-sample-catalog/spec.md](./001-sample-catalog/spec.md),
 then the [sample template](../.specify/templates/sample-template.md).
 
 ## Next feature
 
-Wave 3 authentication (`authn/*` for go, java, csharp, python). In
+Wave 3 authorization (`authz/*` for go, java, csharp, python). In
 Cursor: `/speckit-specify` the next cohort.
 
 ## How to improve something
