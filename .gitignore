@@ -1,0 +1,47 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+vendor/
+.venv/
+venv/
+__pycache__/
+*.pyc
+target/
+.gradle/
+build/
+Pods/
+.dart_tool/
+
+# Tooling and caches
+.DS_Store
+dist/
+build/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.cache/
+coverage/
+*.log
+.idea/
+.vscode/
+*.iml
+
+# Mobile / native
+*.jks
+*.keystore
+*.mobileprovision
+xcuserdata/
+DerivedData/
+
+# Python / .NET
+*.egg-info/
+.pytest_cache/
+bin/
+obj/
