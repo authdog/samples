@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "authdog-authn-expo",
+    "slug": "authdog-authn-expo",
+    "scheme": "authdog-authn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.authdog.samples.authn.expo"
+    },
+    "android": {
+      "package": "com.authdog.samples.authn.expo"
+    }
+  }
+}

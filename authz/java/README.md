@@ -59,4 +59,4 @@ coordinate is not published.
 
 ## Next concept
 
-Observability for this stack is Planned: `observability/java`.
+Observability for this stack is Present: [`observability/java`](../../observability/java/).

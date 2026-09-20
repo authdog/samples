@@ -65,4 +65,4 @@ permission you get 200 and sample data.
 
 ## Next concept
 
-Observability for this stack is Planned: `observability/go`.
+Observability for this stack is Present: [`observability/go`](../../observability/go/).

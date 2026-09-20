@@ -70,4 +70,4 @@ permission you get 200 and sample data.
 
 ## Next concept
 
-Observability for this stack is Planned: `observability/python`.
+Observability for this stack is Present: [`observability/python`](../../observability/python/).

@@ -39,6 +39,10 @@ Identity — session, cookie, or bearer. Who the caller is.
 | [`authn/java`](authn/java/) | Java | Bearer token validation (`authdog-java-sdk`, source-only) |
 | [`authn/csharp`](authn/csharp/) | C# | Bearer token validation (`Authdog.Sdk`, source-only) |
 | [`authn/python`](authn/python/) | Python | FastAPI `require_auth` gate (source-only extra) |
+| [`authn/expo`](authn/expo/) | Expo | Hosted sign-in, deep link, `useUser` |
+| [`authn/ios-swift`](authn/ios-swift/) | Swift | REST / redirect bridge (no official SDK) |
+| [`authn/android-kotlin`](authn/android-kotlin/) | Kotlin | REST / redirect bridge (no official SDK) |
+| [`authn/flutter-dart`](authn/flutter-dart/) | Dart | REST / redirect bridge (no official SDK) |
 
 ## Access Control
 
@@ -79,6 +83,10 @@ The identity event stream — webhooks push signed events; the Events API pulls 
 | [`observability/astro`](observability/astro/) | Astro | Signed webhook receiver and Events API read |
 | [`observability/fastify`](observability/fastify/) | Fastify | Signed webhook receiver and Events API read |
 | [`observability/node`](observability/node/) | Node.js | Signed webhook receiver on `node:http` |
+| [`observability/go`](observability/go/) | Go | Signed webhook receiver and Events API read |
+| [`observability/java`](observability/java/) | Java | Standalone webhook receiver and Events API read |
+| [`observability/csharp`](observability/csharp/) | C# | Standalone webhook receiver and Events API read |
+| [`observability/python`](observability/python/) | Python | Signed webhook receiver and Events API read |
 
 This is not Lidar. Lidar runs detectors inside Authdog and surfaces Signals in the console.
 
@@ -98,6 +106,10 @@ Identity SIEM — monitors, Signals, and a step-up challenge when a security-rel
 | [`lidar/astro`](lidar/astro/) | Astro | React to the event stream with a challenge |
 | [`lidar/fastify`](lidar/fastify/) | Fastify | React to the event stream with a challenge |
 | [`lidar/node`](lidar/node/) | Node.js | React to the event stream on `node:http` |
+| [`lidar/go`](lidar/go/) | Go | React to the event stream with a challenge |
+| [`lidar/java`](lidar/java/) | Java | Standalone event-stream step-up |
+| [`lidar/csharp`](lidar/csharp/) | C# | Standalone event-stream step-up |
+| [`lidar/python`](lidar/python/) | Python | React to the event stream with a challenge |
 
 ## Coming next
 
@@ -107,8 +119,8 @@ On a stack that can enforce access on the server:
 
 | Wave | Stacks | Status |
 | --- | --- | --- |
-| 3 | `go`, `java`, `csharp`, `python` | authn and authz present; observability and lidar planned (`python` extras are source-only) |
-| 4 | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | Planned — mobile / native; no `authz/<stack>` (pair with a server sample). Native stacks use the REST / redirect bridge until an official SDK ships |
+| 3 | `go`, `java`, `csharp`, `python` | Present (`python` extras are source-only) |
+| 4 | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | authn present; observability and lidar planned. No `authz/<stack>` (pair with a server sample). Native stacks use the REST / redirect bridge until an official SDK ships |
 | 5 | `gatsby`, `redwood`, `react`, `rust` | Planned — `react` is UI-only (`@authdog/react-elements`); `rust` is source-only until a crate is published |
 
 ## SDKs and docs

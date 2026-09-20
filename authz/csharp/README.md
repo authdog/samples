@@ -58,4 +58,4 @@ package is not published.
 
 ## Next concept
 
-Observability for this stack is Planned: `observability/csharp`.
+Observability for this stack is Present: [`observability/csharp`](../../observability/csharp/).

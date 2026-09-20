@@ -19,6 +19,9 @@ Cursor skills live in `.cursor/skills/speckit-*`.
 | [009-wave-2-lidar](./009-wave-2-lidar/) | Implemented | Wave 2 Lidar: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
 | [010-wave-3-authn](./010-wave-3-authn/) | Implemented | Wave 3 authentication: go, java, csharp, python |
 | [011-wave-3-authz](./011-wave-3-authz/) | Implemented | Wave 3 authorization: go, java, csharp, python |
+| [012-wave-3-observability](./012-wave-3-observability/) | Implemented | Wave 3 observability: go, java, csharp, python |
+| [013-wave-3-lidar](./013-wave-3-lidar/) | Implemented | Wave 3 Lidar: go, java, csharp, python |
+| [014-wave-4-authn](./014-wave-4-authn/) | Implemented | Wave 4 authentication: expo, ios-swift, android-kotlin, flutter-dart |
 
 Start here: [001-sample-catalog/spec.md](./001-sample-catalog/spec.md),
 then the [sample template](../.specify/templates/sample-template.md).
@@ -36,15 +39,15 @@ the previous feature is Present or Deferred. In Cursor:
 | # | Feature | Stacks | Shape |
 | --- | --- | --- | --- |
 | 011 | Wave 3 authorization (Present) | `go`, `java`, `csharp`, `python` | `go` / `python`: `GET /invoices` after the identity gate, `invoices:read`, 401 / 403 / 200. `java` / `csharp`: token CLI like `authz/node`. Fail-closed. Source-only labels stay. |
-| 012 | Wave 3 observability | same | Signed webhook (`X-Authdog-Signature`) + Events API pull. `go` / `python` in-app. `java` / `csharp` standalone HTTP receiver (no invented SDK helper). Secrets stay server-only. |
-| 013 | Wave 3 lidar | same | Same receiver rules; mark subject on a verified security event; `GET /sensitive` → 428 challenge, not a block. No Signals API. |
-| 014 | Wave 4 authentication | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | Identity only. Native stacks use the documented REST / redirect bridge until an official SDK ships. No `authz/<stack>`. |
+| 012 | Wave 3 observability (Present) | same | Signed webhook (`X-Authdog-Signature`) + Events API pull. `go` / `python` in-app. `java` / `csharp` standalone HTTP receiver (no invented SDK helper). Secrets stay server-only. |
+| 013 | Wave 3 lidar (Present) | same | Same receiver rules; mark subject on a verified security event; `GET /sensitive` → 428 challenge, not a block. No Signals API. |
+| 014 | Wave 4 authentication (Present) | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | Identity only. Native stacks use the documented REST / redirect bridge until an official SDK ships. No `authz/<stack>`. |
 | 015 | Wave 4 observability | same | Server-side concept: companion receiver or pair with `observability/express`. Do not put webhook secrets or API tokens on device. |
 | 016 | Wave 4 lidar | same | Companion / paired-server step-up. Console Signals stay console-only. |
 | 017 | Wave 5 authentication | `gatsby`, `redwood`, `react`, `rust` | `react` is UI-only (`@authdog/react-elements`). `rust` is source-only until a crate is published. |
 | 018 | Wave 5 remaining concepts | per stack | `authz` only where the stack can enforce on the server (`gatsby`, `redwood`, `rust`). Skip `authz/react`. Then observability, then lidar. |
 
-Start with **012 Wave 3 observability**. Tick the same list in
+Start with **015 Wave 4 observability**. Tick the same list in
 [`010-wave-3-authn/follow-ups.md`](./010-wave-3-authn/follow-ups.md).
 MCP, agentic identity, and other new concepts still need their own
 Spec Kit feature before any top-level folder.
