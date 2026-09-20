@@ -59,7 +59,8 @@ coordinate is not published.
 
 ## Next concept
 
-Authorization for this stack is Planned: `authz/java`. Apply
+Authorization for this stack is Present: [`authz/java`](../../authz/java/).
+Apply
 [authorization](https://www.authdog.com/docs/concepts/authorization)
 after `getUserInfo`. Do not treat a successful userinfo call as a
 permission grant.

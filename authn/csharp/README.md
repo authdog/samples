@@ -55,7 +55,8 @@ package is not published.
 
 ## Next concept
 
-Authorization for this stack is Planned: `authz/csharp`. Apply
+Authorization for this stack is Present: [`authz/csharp`](../../authz/csharp/).
+Apply
 [authorization](https://www.authdog.com/docs/concepts/authorization)
 after `GetUserInfoAsync`. Do not treat a successful userinfo call as a
 permission grant.

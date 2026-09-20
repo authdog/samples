@@ -56,6 +56,10 @@ One environment, one model. The check from your app stays the same. These starte
 | [`authz/astro`](authz/astro/) | Astro | SSR page allow/deny |
 | [`authz/fastify`](authz/fastify/) | Fastify | preHandler allow/deny |
 | [`authz/node`](authz/node/) | Node.js | Token plus permission check |
+| [`authz/go`](authz/go/) | Go | Server allow/deny after session (`invoices:read`) |
+| [`authz/java`](authz/java/) | Java | Token plus permission check (source-only) |
+| [`authz/csharp`](authz/csharp/) | C# | Token plus permission check (source-only) |
+| [`authz/python`](authz/python/) | Python | FastAPI allow/deny after session (source-only) |
 
 Do not check permissions in the client as the authorization boundary.
 
@@ -103,7 +107,7 @@ On a stack that can enforce access on the server:
 
 | Wave | Stacks | Status |
 | --- | --- | --- |
-| 3 | `go`, `java`, `csharp`, `python` | authn present; authz, observability, and lidar planned (`python` extras are source-only) |
+| 3 | `go`, `java`, `csharp`, `python` | authn and authz present; observability and lidar planned (`python` extras are source-only) |
 | 4 | `expo`, `ios-swift`, `android-kotlin`, `flutter-dart` | Planned — mobile / native; no `authz/<stack>` (pair with a server sample). Native stacks use the REST / redirect bridge until an official SDK ships |
 | 5 | `gatsby`, `redwood`, `react`, `rust` | Planned — `react` is UI-only (`@authdog/react-elements`); `rust` is source-only until a crate is published |
 

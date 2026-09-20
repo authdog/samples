@@ -66,6 +66,7 @@ local cookie and redirects.
 
 ## Next concept
 
-Authorization for this stack is Planned: `authz/go`. Apply
+Authorization for this stack is Present: [`authz/go`](../../authz/go/).
+Apply
 [authorization](https://www.authdog.com/docs/concepts/authorization)
 after `RequireAuth`. Do not treat `/me` as a permission check.

@@ -71,6 +71,7 @@ local cookie and redirects.
 
 ## Next concept
 
-Authorization for this stack is Planned: `authz/python`. Apply
+Authorization for this stack is Present: [`authz/python`](../../authz/python/).
+Apply
 [authorization](https://www.authdog.com/docs/concepts/authorization)
 after `require_auth`. Do not treat `/me` as a permission check.

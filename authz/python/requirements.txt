@@ -1,0 +1,3 @@
+# Source-only. authdog-fastapi is not on PyPI.
+authdog-fastapi[fastapi] @ git+https://github.com/authdog/web-sdk.git@06bb9cec0eaead7a4ce0a2228473e1ecdf79d0c5#subdirectory=packages/python
+uvicorn>=0.30
