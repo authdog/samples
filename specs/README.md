@@ -10,15 +10,16 @@ Cursor skills live in `.cursor/skills/speckit-*`.
 | --- | --- | --- |
 | [001-sample-catalog](./001-sample-catalog/) | Implemented | Layout, concepts, five framework waves, catalog scaffolding |
 | [002-wave-1-authn](./002-wave-1-authn/) | Implemented | Wave 1 authentication: nextjs, remix, express |
+| [003-wave-1-authz](./003-wave-1-authz/) | Implemented | Wave 1 authorization: nextjs, remix, express |
 
 Start here: [001-sample-catalog/spec.md](./001-sample-catalog/spec.md),
 then the [sample template](../.specify/templates/sample-template.md).
 
 ## Next feature
 
-Wave 1 authorization (`authz/nextjs`, `authz/remix`, `authz/express`)
-or Wave 2 authentication. In Cursor: `/speckit-specify` the next
-cohort — do not start Wave 2 authn until Wave 1 authn stays Present.
+Wave 1 observability (`observability/nextjs`, `observability/remix`,
+`observability/express`) or Wave 2 authentication. In Cursor:
+`/speckit-specify` the next cohort.
 
 ## How to improve something
 

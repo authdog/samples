@@ -70,9 +70,9 @@ Within a stack, do not mark `authz`, `observability`, or `lidar`
 
 | Stack | authn | authz | observability | lidar |
 | --- | --- | --- | --- | --- |
-| `nextjs` | [Present](authn/nextjs/) | Planned | Planned | Planned |
-| `remix` | [Present](authn/remix/) | Planned | Planned | Planned |
-| `express` | [Present](authn/express/) | Planned | Planned | Planned |
+| `nextjs` | [Present](authn/nextjs/) | [Present](authz/nextjs/) | Planned | Planned |
+| `remix` | [Present](authn/remix/) | [Present](authz/remix/) | Planned | Planned |
+| `express` | [Present](authn/express/) | [Present](authz/express/) | Planned | Planned |
 
 ### Wave 2
 
@@ -150,4 +150,4 @@ to govern layout, concepts, and waves.
 In Cursor: `/speckit-specify` → `/speckit-plan` → `/speckit-tasks` →
 `/speckit-implement` → `/speckit-converge`.
 
-Next feature: Wave 1 authorization, or Wave 2 authentication.
+Next feature: Wave 1 observability, or Wave 2 authentication.
