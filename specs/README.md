@@ -11,15 +11,16 @@ Cursor skills live in `.cursor/skills/speckit-*`.
 | [001-sample-catalog](./001-sample-catalog/) | Implemented | Layout, concepts, five framework waves, catalog scaffolding |
 | [002-wave-1-authn](./002-wave-1-authn/) | Implemented | Wave 1 authentication: nextjs, remix, express |
 | [003-wave-1-authz](./003-wave-1-authz/) | Implemented | Wave 1 authorization: nextjs, remix, express |
+| [004-wave-2-authn](./004-wave-2-authn/) | Implemented | Wave 2 authentication: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
+| [005-wave-1-observability](./005-wave-1-observability/) | Implemented | Wave 1 observability: nextjs, remix, express |
 
 Start here: [001-sample-catalog/spec.md](./001-sample-catalog/spec.md),
 then the [sample template](../.specify/templates/sample-template.md).
 
 ## Next feature
 
-Wave 1 observability (`observability/nextjs`, `observability/remix`,
-`observability/express`) or Wave 2 authentication. In Cursor:
-`/speckit-specify` the next cohort.
+Wave 1 Lidar (`lidar/nextjs`, `lidar/remix`, `lidar/express`) or Wave 2
+authorization. In Cursor: `/speckit-specify` the next cohort.
 
 ## How to improve something
 

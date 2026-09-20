@@ -1,0 +1,34 @@
+---
+import { createAuthdogServer } from "@authdog/astro/server";
+
+const authdog = createAuthdogServer({
+  publicKey: import.meta.env.PUBLIC_AUTHDOG_PUBLIC_KEY ?? "",
+});
+
+const profile = await authdog.getUser(Astro.request).catch(() => null);
+if (!profile) {
+  return Astro.redirect("/");
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile — authdog authn (Astro)</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 40rem; line-height: 1.5; }
+      a, button { font: inherit; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Signed in as {profile.user.emails?.[0]?.value}</p>
+      <p>
+        <a href="/">Home</a>
+        {" · "}
+        <a href="/api/logout">Sign out</a>
+      </p>
+    </main>
+  </body>
+</html>

@@ -70,21 +70,21 @@ Within a stack, do not mark `authz`, `observability`, or `lidar`
 
 | Stack | authn | authz | observability | lidar |
 | --- | --- | --- | --- | --- |
-| `nextjs` | [Present](authn/nextjs/) | [Present](authz/nextjs/) | Planned | Planned |
-| `remix` | [Present](authn/remix/) | [Present](authz/remix/) | Planned | Planned |
-| `express` | [Present](authn/express/) | [Present](authz/express/) | Planned | Planned |
+| `nextjs` | [Present](authn/nextjs/) | [Present](authz/nextjs/) | [Present](observability/nextjs/) | Planned |
+| `remix` | [Present](authn/remix/) | [Present](authz/remix/) | [Present](observability/remix/) | Planned |
+| `express` | [Present](authn/express/) | [Present](authz/express/) | [Present](observability/express/) | Planned |
 
 ### Wave 2
 
 | Stack | authn | authz | observability | lidar |
 | --- | --- | --- | --- | --- |
-| `sveltekit` | Planned | Planned | Planned | Planned |
-| `vue` | Planned | Planned | Planned | Planned |
-| `tanstack-start` | Planned | Planned | Planned | Planned |
-| `angular` | Planned | Planned | Planned | Planned |
-| `astro` | Planned | Planned | Planned | Planned |
-| `fastify` | Planned | Planned | Planned | Planned |
-| `node` | Planned | Planned | Planned | Planned |
+| `sveltekit` | [Present](authn/sveltekit/) | Planned | Planned | Planned |
+| `vue` | [Present](authn/vue/) | Planned | Planned | Planned |
+| `tanstack-start` | [Present](authn/tanstack-start/) | Planned | Planned | Planned |
+| `angular` | [Present](authn/angular/) | Planned | Planned | Planned |
+| `astro` | [Present](authn/astro/) | Planned | Planned | Planned |
+| `fastify` | [Present](authn/fastify/) | Planned | Planned | Planned |
+| `node` | [Present](authn/node/) | Planned | Planned | Planned |
 
 ### Wave 3
 
