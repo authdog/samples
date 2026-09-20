@@ -1,0 +1,8 @@
+{
+  "name": "authdog-observability-angular",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "receive": "node server/receive.js"
+  }
+}

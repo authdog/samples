@@ -1,0 +1,51 @@
+---
+import { createAuthdogServer } from "@authdog/astro/server";
+import { hasPermission, REQUIRED_PERMISSION } from "../lib/authz";
+
+const authdog = createAuthdogServer({
+  publicKey: import.meta.env.PUBLIC_AUTHDOG_PUBLIC_KEY ?? "",
+});
+
+const profile = await authdog.getUser(Astro.request).catch(() => null);
+if (!profile) {
+  return Astro.redirect("/");
+}
+if (!hasPermission(profile.user, REQUIRED_PERMISSION)) {
+  return new Response(
+    JSON.stringify({ error: "Forbidden", missing: [REQUIRED_PERMISSION] }),
+    { status: 403, headers: { "content-type": "application/json" } },
+  );
+}
+
+const invoices = [
+  { id: "inv_001", amount: 1200, status: "paid" },
+  { id: "inv_002", amount: 340, status: "open" },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invoices — authdog authz (Astro)</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 40rem; line-height: 1.5; }
+      a, button { font: inherit; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Invoices</h1>
+      <ul>
+        {invoices.map((invoice) => (
+          <li>{invoice.id} — {invoice.amount} ({invoice.status})</li>
+        ))}
+      </ul>
+      <p>
+        <a href="/">Home</a>
+        {" · "}
+        <a href="/api/logout">Sign out</a>
+      </p>
+    </main>
+  </body>
+</html>

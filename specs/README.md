@@ -13,14 +13,18 @@ Cursor skills live in `.cursor/skills/speckit-*`.
 | [003-wave-1-authz](./003-wave-1-authz/) | Implemented | Wave 1 authorization: nextjs, remix, express |
 | [004-wave-2-authn](./004-wave-2-authn/) | Implemented | Wave 2 authentication: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
 | [005-wave-1-observability](./005-wave-1-observability/) | Implemented | Wave 1 observability: nextjs, remix, express |
+| [006-wave-1-lidar](./006-wave-1-lidar/) | Implemented | Wave 1 Lidar: nextjs, remix, express |
+| [007-wave-2-authz](./007-wave-2-authz/) | Implemented | Wave 2 authorization: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
+| [008-wave-2-observability](./008-wave-2-observability/) | Implemented | Wave 2 observability: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
+| [009-wave-2-lidar](./009-wave-2-lidar/) | Implemented | Wave 2 Lidar: sveltekit, vue, tanstack-start, angular, astro, fastify, node |
 
 Start here: [001-sample-catalog/spec.md](./001-sample-catalog/spec.md),
 then the [sample template](../.specify/templates/sample-template.md).
 
 ## Next feature
 
-Wave 1 Lidar (`lidar/nextjs`, `lidar/remix`, `lidar/express`) or Wave 2
-authorization. In Cursor: `/speckit-specify` the next cohort.
+Wave 3 authentication (`authn/*` for go, java, csharp, python). In
+Cursor: `/speckit-specify` the next cohort.
 
 ## How to improve something
 

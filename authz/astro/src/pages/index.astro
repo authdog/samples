@@ -1,0 +1,55 @@
+---
+const publicKey = import.meta.env.PUBLIC_AUTHDOG_PUBLIC_KEY ?? "";
+let signinUri: string | null = null;
+if (publicKey) {
+  try {
+    const payload = JSON.parse(
+      Buffer.from(publicKey.replace("pk_", ""), "base64").toString(),
+    );
+    signinUri = `${payload.identityHost}/signin/${payload.environmentId}`;
+  } catch {
+    signinUri = null;
+  }
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>authdog authz — Astro</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 40rem; line-height: 1.5; }
+      a, button { font: inherit; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>authdog authorization (Astro)</h1>
+      <p>
+        This starter proves a server-side allow/deny decision. Identity comes
+        first; permission comes second.
+      </p>
+      <p>
+        <code>/invoices</code> redirects without a session, is 403 without
+        <code>invoices:read</code>, and 200 with it.
+      </p>
+      {signinUri ? (
+        <p>
+          <a href={signinUri}>Sign in with the hosted Account portal</a>
+          {" · "}
+          <a href="/invoices">Invoices</a>
+        </p>
+      ) : (
+        <p>
+          Set <code>PUBLIC_AUTHDOG_PUBLIC_KEY</code> in <code>.env</code> to a
+          <code>pk_...</code> public key.
+        </p>
+      )}
+    </main>
+    <script>
+      import { initAuthdog } from "@authdog/astro/client";
+      initAuthdog();
+    </script>
+  </body>
+</html>

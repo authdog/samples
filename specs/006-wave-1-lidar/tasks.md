@@ -8,15 +8,15 @@
 
 ## Phase 2: Step-up samples (P1)
 
-- [ ] T002 [US1] Add `lidar/express`: webhook receiver, step-up mark, sensitive route, challenge clear
-- [ ] T003 [P] [US2] Add `lidar/nextjs`: webhook route handler, step-up mark, sensitive route, challenge clear
-- [ ] T004 [P] [US3] Add `lidar/remix`: webhook action, step-up mark, sensitive loader, challenge clear
+- [x] T002 [US1] Add `lidar/express`: webhook receiver, step-up mark, sensitive route, challenge clear
+- [x] T003 [P] [US2] Add `lidar/nextjs`: webhook route handler, step-up mark, sensitive route, challenge clear
+- [x] T004 [P] [US3] Add `lidar/remix`: webhook action, step-up mark, sensitive loader, challenge clear
 
 ## Phase 3: Catalog
 
-- [ ] T005 Mark Wave 1 `lidar` cells Present in `README.md`
-- [ ] T006 Update `specs/README.md` to list `006-wave-1-lidar`
+- [x] T005 Mark Wave 1 `lidar` cells Present in `README.md`
+- [x] T006 Update `specs/README.md` to list `006-wave-1-lidar`
 
 ## Phase 4: Verify
 
-- [ ] T007 Install and build/type-check each lidar sample
+- [x] T007 Install and build/type-check each lidar sample

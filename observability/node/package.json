@@ -1,0 +1,9 @@
+{
+  "name": "authdog-observability-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "receive": "node src/receive.js",
+    "events": "node src/events.js"
+  }
+}

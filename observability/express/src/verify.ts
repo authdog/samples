@@ -23,7 +23,9 @@ export function verifyAuthdogSignature(
   if (!signatureHeader) return false;
 
   const parts = Object.fromEntries(
-    signatureHeader.split(",").map((kv) => kv.split("=", 2) as [string, string]),
+    signatureHeader
+      .split(",")
+      .map((kv) => kv.trim().split("=", 2) as [string, string]),
   );
   const t = parts.t;
   const v1 = parts.v1;

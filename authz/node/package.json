@@ -1,0 +1,11 @@
+{
+  "name": "authdog-authz-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@authdog/node-commons": "^0.3.1"
+  }
+}

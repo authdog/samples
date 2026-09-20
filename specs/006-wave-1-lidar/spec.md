@@ -4,7 +4,7 @@
 
 **Created**: 2026-09-20
 
-**Status**: Draft
+**Status**: Implemented
 
 **Input**: User description: "Wave 1 Lidar samples for nextjs, remix, and express."
 
