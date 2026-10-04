@@ -1,0 +1,15 @@
+{
+  "name": "authdog-starter-gatsby",
+  "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "@authdog/gatsby": "^0.1.1",
+    "gatsby": "^5.14.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}

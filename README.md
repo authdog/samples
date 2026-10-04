@@ -111,6 +111,36 @@ Identity SIEM — monitors, Signals, and a step-up challenge when a security-rel
 | [`lidar/csharp`](lidar/csharp/) | C# | Standalone event-stream step-up |
 | [`lidar/python`](lidar/python/) | Python | React to the event stream with a challenge |
 
+## Application starters
+
+Prototypes of the apps on the docs home. Each one is still an identity
+starter: a sign-in or a session gate, not a permission grant. Where a
+generic `authn/<stack>` sample already existed, the starter is that
+sample shaped as the named app.
+
+| Sample | App | Stack |
+| --- | --- | --- |
+| [`starters/nextjs`](starters/nextjs/) | Team dashboard | Next.js |
+| [`starters/react`](starters/react/) | Customer navbar | React elements (UI only) |
+| [`starters/remix`](starters/remix/) | Support inbox | Remix |
+| [`starters/expo`](starters/expo/) | Field companion | Expo |
+| [`starters/sveltekit`](starters/sveltekit/) | Member site | SvelteKit |
+| [`starters/tanstack-start`](starters/tanstack-start/) | Ops console | TanStack Start |
+| [`starters/vue`](starters/vue/) | Workspace settings | Vue |
+| [`starters/angular`](starters/angular/) | Admin console | Angular |
+| [`starters/astro`](starters/astro/) | Handbook | Astro |
+| [`starters/gatsby`](starters/gatsby/) | Resource library | Gatsby |
+| [`starters/redwood`](starters/redwood/) | Job board | RedwoodJS (drop-in slice) |
+| [`starters/express`](starters/express/) | Orders API | Express |
+| [`starters/fastify`](starters/fastify/) | Inventory API | Fastify |
+| [`starters/fastapi`](starters/fastapi/) | Booking API | FastAPI (source-only) |
+| [`starters/django`](starters/django/) | Clinic portal | Django (source-only) |
+| [`starters/flask`](starters/flask/) | Status board | Flask (source-only) |
+| [`starters/starlette`](starters/starlette/) | Intake service | Starlette (source-only) |
+| [`starters/aiohttp`](starters/aiohttp/) | Event ingest | aiohttp (source-only) |
+| [`starters/go`](starters/go/) | Billing service | Go |
+| [`starters/rust`](starters/rust/) | Policy service | Rust (source-only, sibling `web-sdk` checkout) |
+
 ## Coming next
 
 On a stack that can enforce access on the server:
